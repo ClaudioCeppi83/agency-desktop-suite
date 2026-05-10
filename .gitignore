@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.venv/
+
+# GTK / GNOME
+.cache/
+.local/
+
+# The Agency Desktop Data (No queremos subir manifiestos generados o configuraciones locales)
+assets/manifest.json
+state.json
+squads.json
+
+# IDEs
+.vscode/
+.idea/
+
+# Sistema
+.DS_Store
+Thumbs.db
