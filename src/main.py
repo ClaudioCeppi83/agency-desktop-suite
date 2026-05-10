@@ -60,10 +60,12 @@ class AgencyApp(Adw.Application):
 			return self.settings["language"]
 		
 		try:
-			sys_lang = locale.getdefaultlocale()[0] # ej: 'es_ES'
-			if sys_lang and sys_lang.startswith("es"):
+			# Método moderno para Python 3.11+
+			sys_lang = locale.getlocale()[0] or locale.getdefaultlocale()[0]
+			if sys_lang and sys_lang.lower().startswith("es"):
 				return "es"
-		except: pass
+		except Exception:
+			pass
 		
 		return "en" # Inglés por defecto (principal)
 
