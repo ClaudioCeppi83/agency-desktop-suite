@@ -1,4 +1,45 @@
-# Agency Desktop Suite (Native Ubuntu)
+# Agency Desktop Suite (Native Ubuntu Edition)
+
+[English](#english) | [Español](#español)
+
+---
+
+<a name="english"></a>
+# English
+
+A powerful visual console to manage, customize, and orchestrate over 180 AI agents from "The Agency" library, natively integrated with Gemini CLI and Ubuntu 24.04.
+
+## ✨ Key Features
+
+- **Visual Management:** Explore 180+ specialized experts with a modern GTK4 interface.
+- **Physical Orchestration (Drag-and-Drop):** Create agent squads simply by dragging them to your workspace.
+- **Safe Customization:** Edit any agent's rules. The system prioritizes your changes while keeping the factory version always available.
+- **Smart Synchronization:** Update the library from GitHub and receive visual badges only for agents that actually changed.
+- **Native Integration:** Direct access from the Ubuntu applications menu with official look-and-feel (Libadwaita).
+- **Bilingual Support:** Automatic language detection (English/Spanish).
+
+## 🚀 Installation (New Systems)
+
+To deploy the full suite on a new Ubuntu system, clone this repository and run the master installer:
+
+```bash
+chmod +x install.sh
+./install.sh
+```
+
+The script will handle GTK4 dependencies, configure Gemini CLI directories, download original agents, and create the desktop launcher.
+
+## 🛠️ Project Structure
+
+- `src/main.py`: Application core (Python/GTK4).
+- `assets/locales/`: Translation files (JSON).
+- `scripts/`: Support tools for manifest generation and syncing.
+- `install.sh`: Automated deployment script.
+
+---
+
+<a name="español"></a>
+# Español
 
 Una potente consola visual para gestionar, personalizar y orquestar a más de 180 agentes de IA de la biblioteca "The Agency", integrada nativamente en Gemini CLI y Ubuntu 24.04.
 
@@ -9,6 +50,7 @@ Una potente consola visual para gestionar, personalizar y orquestar a más de 18
 - **Personalización Segura:** Edita las reglas de cualquier agente. El sistema prioriza tus cambios pero mantiene siempre la versión de fábrica disponible.
 - **Sincronización Inteligente:** Actualiza la biblioteca desde GitHub y recibe notificaciones visuales (Badges) solo de los agentes que realmente cambiaron.
 - **Integración Nativa:** Acceso directo desde el menú de aplicaciones de Ubuntu y look-and-feel oficial (Libadwaita).
+- **Soporte Bilingüe:** Detección automática de idioma (Inglés/Español).
 
 ## 🚀 Instalación (Equipos Nuevos)
 
@@ -24,26 +66,17 @@ El script se encargará de instalar las dependencias de GTK4, configurar los dir
 ## 🛠️ Estructura del Proyecto
 
 - `src/main.py`: Núcleo de la aplicación (Python/GTK4).
+- `assets/locales/`: Archivos de traducción (JSON).
 - `scripts/`: Herramientas de soporte para generación de manifiestos y sincronización.
-- `assets/`: Datos dinámicos y manifiesto de expertos.
 - `install.sh`: Script de despliegue automatizado.
 
-## 📖 Instrucciones de Uso
-
-1. **Explorar:** Usa la lista lateral izquierda para seleccionar agentes. Verás sus reglas técnicas en el panel central.
-2. **Editar:** Modifica el texto en el editor central y pulsa el botón **Guardar** (Disco). Verás la etiqueta **"Editado"** en la lista.
-3. **Reset:** Si quieres volver a las reglas originales, pulsa el botón **Revertir** (Icono rojo de reset).
-4. **Armar Squads:** Arrastra agentes desde la lista izquierda y suéltalos en el panel **"Mi Squad"** (Derecha). Pulsa el botón de guardado del Squad para persistir tu equipo.
-5. **Sincronizar:** Usa el botón de refresco arriba del catálogo para buscar actualizaciones en GitHub. Solo los agentes actualizados mostrarán la etiqueta azul.
-
 ---
-*Desarrollado como MVP profesional para la gestión avanzada de agentes de IA.*
 
-## 🤝 Créditos y Reconocimientos
+## 🤝 Credits and Recognitions / Créditos y Reconocimientos
 
-Esta aplicación es una **suite de gestión y orquestación**, pero el "cerebro" técnico reside en los agentes.
+This application is a **management and orchestration suite**, but the technical "brain" resides in the agents. / Esta aplicación es una **suite de gestión y orquestación**, pero el "cerebro" técnico reside en los agentes.
 
-- **Autor de los Agentes:** [msitarzewski](https://github.com/msitarzewski)
-- **Repositorio Original:** [agency-agents](https://github.com/msitarzewski/agency-agents)
+- **Agents Author / Autor de los Agentes:** [msitarzewski](https://github.com/msitarzewski)
+- **Original Repository / Repositorio Original:** [agency-agents](https://github.com/msitarzewski/agency-agents)
 
-**Nota Importante:** Todos los perfiles de agentes disponibles de fábrica en esta suite son propiedad intelectual del repositorio `agency-agents`. Esta suite está diseñada únicamente para facilitar su manipulación visual, personalización y uso en entornos como Gemini CLI. Agradecemos profundamente a msitarzewski por su increíble trabajo al crear y mantener esta biblioteca de más de 180 expertos.
+**Important Note:** All agent profiles available factory-default in this suite are the intellectual property of the `agency-agents` repository. This suite is designed solely to facilitate their visual manipulation, customization, and use in environments like Gemini CLI. / **Nota Importante:** Todos los perfiles de agentes disponibles de fábrica en esta suite son propiedad intelectual del repositorio `agency-agents`. Esta suite está diseñada únicamente para facilitar su manipulación visual, personalización y uso en entornos como Gemini CLI.
